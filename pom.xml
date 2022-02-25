@@ -50,6 +50,7 @@
                 <filtering>true</filtering>
             </resource>
         </resources>
+        <finalName>ram</finalName>
     </build>
 
     <repositories>

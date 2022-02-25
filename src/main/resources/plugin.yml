@@ -1,0 +1,8 @@
+name: Ram
+version: '${project.version}'
+main: dev.sancraft.ram.main
+api-version: 1.18
+
+commands:
+  ram:
+    aliases: randomacesmemory

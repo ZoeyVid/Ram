@@ -11,7 +11,7 @@ composer.phar
 
 /*
 !/jobs
-!/.gitignore
+!/.gitignoren
 !/*.xml
 
 #ignore all files in jobs subdirectories except for folders

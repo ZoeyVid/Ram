@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Build with Maven
 
 on:
   push:
@@ -33,4 +33,14 @@ jobs:
       with:
         name: artifacts
         path: |
+          target/ram.jar
+
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      if: github.event_name != 'pull_request'
+      with:
+        prerelease: false
+        repo_token: ${{ github.token }}
+        title: ${{ steps.version.outputs.version }}
+        automatic_release_tag: ${{ steps.version.outputs.version }}
+        files: |
           target/ram.jar

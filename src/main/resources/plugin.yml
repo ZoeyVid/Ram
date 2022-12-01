@@ -1,6 +1,6 @@
 name: Ram
 version: '${project.version}'
-main: dev.sancraft.ram.main
+main: de.zoeyvid.ram.main
 
 commands:
   ram:

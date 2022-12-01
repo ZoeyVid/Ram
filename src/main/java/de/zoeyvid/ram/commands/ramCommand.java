@@ -1,4 +1,4 @@
-package dev.sancraft.ram.commands;
+package de.zoeyvid.ram.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

@@ -1,6 +1,6 @@
-package dev.sancraft.ram;
+package de.zoeyvid.ram;
 
-import dev.sancraft.ram.commands.ramCommand;
+import de.zoeyvid.ram.commands.ramCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;

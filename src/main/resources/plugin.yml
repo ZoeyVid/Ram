@@ -1,7 +1,7 @@
 name: Ram
 version: '${project.version}'
 main: de.zoeyvid.ram.main
-
+folia-supported: true
 commands:
   ram:
     aliases: randomacesmemory

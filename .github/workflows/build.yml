@@ -35,7 +35,9 @@ jobs:
           github-tag: v${{ steps.version.outputs.version }}
           files-primary: target/ram.jar
 #          java: 17
-#          loaders: 
+          loaders: |
+            paper
+            purpur
 #          game-versions: 
           modrinth-id: 5QQHU3Yt
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}

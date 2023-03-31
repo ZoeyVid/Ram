@@ -34,11 +34,17 @@ jobs:
           version: ${{ steps.version.outputs.version }}
           github-tag: v${{ steps.version.outputs.version }}
           files-primary: target/ram.jar
-#          java: 17
+          java: |
+            17
           loaders: |
             paper
             purpur
-#          game-versions: 
+          game-versions: |
+            1.19
+            1.19.1
+            1.19.2
+            1.19.3
+            1.19.4
           modrinth-id: 5QQHU3Yt
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
 #          curseforge-id: 394468

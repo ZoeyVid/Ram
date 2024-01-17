@@ -26,7 +26,7 @@ jobs:
           name: artifacts
           path: |
             target/ram.jar
-      - uses: Kir-Antipov/mc-publish@v3.2
+      - uses: Kir-Antipov/mc-publish@v3.3
         if: github.ref == 'refs/heads/main'
         with:
           version-type: release

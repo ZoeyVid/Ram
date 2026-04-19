@@ -7,12 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
       - name: Read .version file
         id: version
         run: echo "version=$(cat .github/.version)" >> $GITHUB_OUTPUT
       - name: Set up JDK 21
-        uses: actions/setup-java@v5
+        uses: actions/setup-java@v5.2.0
         with:
           java-version: 21
           distribution: corretto
@@ -21,12 +21,12 @@ jobs:
           sed -i "s|0.0.0|"$(cat .github/.version)"|g" pom.xml
           mvn -B package --file pom.xml
           rm -rf target/original-*.jar
-      - uses: actions/upload-artifact@v7
+      - uses: actions/upload-artifact@v7.0.1
         with:
           name: artifacts
           path: |
             target/ram.jar
-      - uses: Kir-Antipov/mc-publish@v3.3
+      - uses: Kir-Antipov/mc-publish@v3.3.0
         if: github.ref == 'refs/heads/main'
         with:
           version-type: release

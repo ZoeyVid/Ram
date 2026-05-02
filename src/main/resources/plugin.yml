@@ -1,7 +1,14 @@
 name: Ram
-version: '${project.version}'
+version: ${project.version}
 main: de.zoeyvid.ram.main
+description: This plugins adds a /ram command, which shows the real ram usage of the server (not the ram claimed by the process)
+author: ZoeyVid
+authors: [DavidCraftDev, Zoey2936]
+website: https://github.com/ZoeyVid/Ram
+api-version: '1.17'
 folia-supported: true
+
 commands:
   ram:
+    description: This command shows the real ram usage of the server (not the ram claimed by the process)
     aliases: randomacesmemory

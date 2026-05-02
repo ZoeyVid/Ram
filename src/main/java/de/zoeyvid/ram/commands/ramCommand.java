@@ -14,9 +14,9 @@ public class ramCommand implements CommandExecutor {
       @NotNull String label,
       @NotNull String[] args) {
     Runtime r = Runtime.getRuntime();
-    long memUsed = (r.maxMemory() - r.freeMemory()) / 1048576;
+    long memUsed = (r.totalMemory() - r.freeMemory()) / 1048576;
     long memMax = r.maxMemory() / 1048576;
-    sender.sendMessage(ChatColor.GOLD + "Ram Usage: " + ChatColor.WHITE + memUsed + "/" + memMax);
-    return false;
+    sender.sendMessage(ChatColor.GOLD + "Ram Usage: " + ChatColor.WHITE + memUsed + " MB / " + memMax + " MB");
+    return true;
   }
 }
